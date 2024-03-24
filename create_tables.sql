@@ -1,0 +1,14 @@
+CREATE TABLE Users (
+  UserID SERIAL PRIMARY KEY,
+  "name" VARCHAR(50),
+  Email  VARCHAR(50)
+);
+
+CREATE TABLE Orders (
+  OrderID SERIAL PRIMARY KEY,
+  UserID INT,
+  Product VARCHAR(50),
+  Price DECIMAL(10, 2)
+);
+
+
